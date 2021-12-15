@@ -1,6 +1,20 @@
 .App {
-  text-align: center;
+  padding: 44px;
 }
+
+hr {
+  margin: 44px 0px;
+}
+
+
+.buttons button{
+  padding: 8px 16px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  width: 100px;
+}
+
 
 .App-logo {
   height: 40vmin;
