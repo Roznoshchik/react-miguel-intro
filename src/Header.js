@@ -5,7 +5,6 @@ export default function Header(){
     const currentUser = React.useContext(UserContext);
     console.log(currentUser)
     return (
-        
         <div>
             {currentUser.username ?
                 <p>welcome {currentUser.username}</p>

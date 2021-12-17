@@ -2,6 +2,7 @@ import React from 'react'
 
 import './App.css';
 import Child from './child.js';
+import Child2 from './child2'
 import Rates from './rates.js';
 import Navigation from './Navigation.js';
 import Header from './Header.js';
@@ -43,6 +44,24 @@ export default function App() {
 
   return (
     <div className="App">
+      
+      <div>
+        <h1>Memoization</h1>
+        <p>Counter: {counter}</p>
+        <Child
+          step={1} 
+          setCounter = {setCounter}
+        />
+         <Child
+          step={5} 
+          setCounter = {setCounter}
+        />
+        <Child2 
+          setCounter = {setCounter}
+        />
+      </div>
+      
+      <hr />
       <div>
         <h1> The Context Hook</h1>
         <UserContext.Provider value={currentUser}>
